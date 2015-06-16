@@ -34,13 +34,15 @@
 		height:					auto;
 	}
 
-	div[itemprop=articleBody] img.left {
+	div[itemprop=articleBody] img.left,
+	div[itemprop=articleBody] img.alignleft {
 		float:					left;
 		width:					auto;
 		height:					auto;
 	}
 
-	div[itemprop=articleBody] img.right {
+	div[itemprop=articleBody] img.right,
+	div[itemprop=articleBody] img.alignright {
 		float:					right;
 		width:					auto;
 		height:					auto;

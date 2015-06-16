@@ -6,7 +6,7 @@
  * @subpackage Blank
  * @since Blank 1.0
  * @date 2015-05-10
- * @edit 2015-05-10 Arne Kamola <a.kamola@psilab.de>
+ * @edit 2015-06-18 Arne Kamola <a.kamola@psilab.de>
  */
 
 get_header(); ?>
@@ -21,11 +21,11 @@ get_header(); ?>
 
 		<?php elseif ( is_tag() ): ?>
 
-			<h1>Stichwort: <?php single_tag_title(); ?></h1>
+			<h1><?php _e('Tag', 'blanktheme'); ?>: <?php single_tag_title(); ?></h1>
 
 		<?php elseif ( is_search() ): ?>
 
-			<h1><?php _e('Suche', 'blanktheme'); ?>: <?php echo esc_html( get_search_query(false) ); ?></h1>
+			<h1><?php _e('Search', 'blanktheme'); ?>: <?php echo esc_html( get_search_query(false) ); ?></h1>
 
 		<?php elseif ( is_year() ): ?>
 
