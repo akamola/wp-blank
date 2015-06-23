@@ -1,6 +1,6 @@
-# Blank
+# wp-blank
 
-*Blank* is yet another [WordPress](http://wordpress.org) starter theme with all necessary features of WordPress for modern websites.
+*wp-blank* is yet another [WordPress](http://wordpress.org) starter theme with all necessary features of WordPress for modern websites.
 
 Note: This WordPress theme is only a starting point for your own theme. It only makes use of basic and some advanced features of WordPress and modern webdevelopment.
 
@@ -60,10 +60,23 @@ Need help? Got questions? Found an errors? Have an improvment? Feel free to get 
 
 - Basic JavaScript file with jQuery setup
   - See `app.js`
-- Enqueue `app.js` to use WordPress` jQuery 
+- Enqueue `app.js` to use WordPress` jQuery
   - See `functions.php`
 
+### Security
+
+- Hide WordPress version by removing the generator meta tag
+- Replace the default login error message to hide any information that could maybe used to crack into the system
+
 ## Releases
+
+### 1.0.2 (2015-06-23)
+
+- Small bug fixes and security enhancements
+
+### 1.0.1 (2015-06-18)
+
+- Small bug fixes and enhancements
 
 ### 1.0 (2015-05-10)
 

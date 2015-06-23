@@ -6,7 +6,7 @@
  * @subpackage Blank
  * @since Blank 1.0
  * @date 2015-05-10
- * @edit 2015-05-10 Arne Kamola <a.kamola@psilab.de>
+ * @edit 2015-06-23 Arne Kamola <a.kamola@psilab.de>
  */
 
 /**
@@ -106,7 +106,7 @@ function blanktheme_register_sidebars() {
 add_action('init', 'blanktheme_register_sidebars');
 
 /**
- * Add custom JavaScript that depends on jQuery
+ * Add custom JavaScript that depends on jQuery.
  * @return void
  */
 function blanktheme_js() {
@@ -117,3 +117,23 @@ function blanktheme_js() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'blanktheme_js' );
+
+/**
+ * Remove the generator meta tag with the WordPress version from the HTML for
+ * better security.
+ * @return Empty string
+ */
+function blanktheme_remove_version() {
+	return '';
+}
+add_filter('the_generator', 'blanktheme_remove_version');
+
+/**
+ * Replace the default login error message to hide any information that could
+ * maybe used for cracking into the system.
+ * @return Login error message
+ */
+function blanktheme_wrong_login() {
+	return 'Wrong username or password.';
+}
+add_filter('login_errors', 'blanktheme_wrong_login');
