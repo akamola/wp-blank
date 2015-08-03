@@ -6,10 +6,10 @@
  * Archive template
  *
  * @package WordPress
- * @subpackage Blank
- * @since Blank 1.0
+ * @subpackage wp-blank
+ * @since wp-blank 1.0
  * @date 2015-05-10
- * @edit 2015-05-10 Arne Kamola <a.kamola@psilab.de>
+ * @edit 2015-08-03 Arne Kamola <a.kamola@psilab.de>
  */
 
 get_header(); ?>

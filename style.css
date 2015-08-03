@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /**
- * Theme Name: Blank
+ * Theme Name: wp-blank
  * Theme URI: http://github.com/akamola/wp-blank
  * Description:
  * Version: 1.0
@@ -29,6 +29,16 @@
 		display:				none;
 	}
 
+	div[itemprop=articleBody] .left,
+	div[itemprop=articleBody] .alignleft {
+		float:					left;
+	}
+
+	div[itemprop=articleBody] .right,
+	div[itemprop=articleBody] .alignright {
+		float:					right;
+	}
+
 	div[itemprop=articleBody] img {
 		width:					100%;
 		height:					auto;
@@ -36,14 +46,12 @@
 
 	div[itemprop=articleBody] img.left,
 	div[itemprop=articleBody] img.alignleft {
-		float:					left;
 		width:					auto;
 		height:					auto;
 	}
 
 	div[itemprop=articleBody] img.right,
 	div[itemprop=articleBody] img.alignright {
-		float:					right;
 		width:					auto;
 		height:					auto;
 	}
@@ -54,12 +62,22 @@
 	}
 }
 
-/* Tablet */
+/* Extra small devices, e.g. Phones */
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 768px) {
 }
 
-/* Smartphone */
+/* Small devices, e.g. Tablets */
 
-@media only screen and (max-width: 639px) {
+@media only screen and (min-width: 768px) {
+}
+
+/* Medium devices, e.g. Desktops */
+
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices, e.g. Desktops */
+
+@media only screen and (min-width: 1200px) {
 }

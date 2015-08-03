@@ -4,7 +4,7 @@
 
 Note: This WordPress theme is only a starting point for your own theme. It only makes use of basic and some advanced features of WordPress and modern webdevelopment.
 
-Need help? Got questions? Found an errors? Have an improvment? Feel free to get in touch or open an issue on GitHub: http://github.com/akamola/wp-blank
+Need help? Got questions? Found an error? Have an improvment? Feel free to get in touch or open an issue on GitHub: http://github.com/akamola/wp-blank
 
 ## Features
 
@@ -14,6 +14,8 @@ Need help? Got questions? Found an errors? Have an improvment? Feel free to get 
   - See `functions.php`
   - Widget area token: `blanktheme-widgetarea-`
 - Basic setup for menus
+  - See `functions.php`
+- Basic setup for theme support features
   - See `functions.php`
 - Optimized markup for comments
   - Seperated sections for pingbacks/trackbacks and comments
@@ -69,6 +71,10 @@ Need help? Got questions? Found an errors? Have an improvment? Feel free to get 
 - Replace the default login error message to hide any information that could maybe used to crack into the system
 
 ## Releases
+
+### 1.0.3 (2015-08-03)
+
+- Refactoring, small enhancements and corrections
 
 ### 1.0.2 (2015-06-23)
 
