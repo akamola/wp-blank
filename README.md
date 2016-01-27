@@ -10,10 +10,10 @@ Need help? Got questions? Found an error? Have an improvment? Feel free to get i
 
 ### WordPress
 
-- 3 widget areas: header, sidebar, footer
+- 2 widget areas: sidebar, footer
   - See `functions.php`
-  - Widget area token: `blanktheme-widgetarea-`
-- Basic setup for menus
+  - Widget area token: `wpblank-widgetarea-`
+- 1 menu in the header: primary
   - See `functions.php`
 - Basic setup for theme support features
   - See `functions.php`
@@ -22,12 +22,10 @@ Need help? Got questions? Found an error? Have an improvment? Feel free to get i
   - See `comments.php` and `functions.php`
 - Basic error 404 page
   - Edit `404.php`
-- Archive template with tag-cloud, month list and categories
-  - See `archive.php`
 - `is_subpage()` function to check if a page is a subpage
   - See `functions.php`
 - Translation ready (i18n)
-- Theme token (for i18n, etc.): `blanktheme`
+- Theme token (for i18n, etc.): `wpblank`
 
 ### HTML, CSS & Accessibility
 
@@ -71,6 +69,17 @@ Need help? Got questions? Found an error? Have an improvment? Feel free to get i
 - Replace the default login error message to hide any information that could maybe used to crack into the system
 
 ## Releases
+
+### 1.1.0 (2016-01-27)
+
+- Change theme token for i18n, function prefix, etc. from `blanktheme` to `wpblank`
+- Remove archive page template
+- Changed ID of the header menu from `header` to `primary`
+- Replace widget area in the header with a native menu (also see previous point)
+- Use `is_home()` instead of `is_front_page()` on the page title and site name for correct page title and site name linking even without static frontpage
+- Encapsulate seperator for tags "," with a `SPAN` with the class `sep`
+- Fix JavaScripts placement: now placed at the end of the HTML file for better page performance
+- Fix hooks of `add_action()` for menus and widget areas in the `functions.php`
 
 ### 1.0.3 (2015-08-03)
 

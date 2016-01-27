@@ -6,7 +6,7 @@
  * @subpackage wp-blank
  * @since wp-blank 1.0
  * @date 2015-05-10
- * @edit 2015-08-03 Arne Kamola <a.kamola@psilab.de>
+ * @edit 2016-01-27 Arne Kamola <a.kamola@psilab.de>
  */
 
 if ( comments_open() ): ?>
@@ -21,14 +21,14 @@ if ( comments_open() ): ?>
 
 				<?php if ( count($comments) > 0 ): ?>
 
-				<h1><?php _e('Comments', 'blanktheme'); ?></h1>
+				<h1><?php _e('Comments', 'wpblank'); ?></h1>
 
 				<?php wp_list_comments(array(
 					'walker'			=> null,
 					'max_depth'			=> '',
 					'style'				=> 'div',
-					'callback'			=> 'blanktheme_comment',
-					'end-callback'		=> 'blanktheme_comment_end',
+					'callback'			=> 'wpblank_comment',
+					'end-callback'		=> 'wpblank_comment_end',
 					'type'				=> 'comment',
 					'reply_text'		=> 'Reply',
 					'page'				=> '',
@@ -49,7 +49,7 @@ if ( comments_open() ): ?>
 
 			<?php if ( count($pings) > 0 ): ?>
 
-				<h1><?php _e('Trackbacks', 'blanktheme'); ?></h1>
+				<h1><?php _e('Trackbacks', 'wpblank'); ?></h1>
 
 				<?php wp_list_comments(array(
 					'walker'			=> null,

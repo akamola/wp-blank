@@ -6,7 +6,7 @@
  * @subpackage wp-blank
  * @since wp-blank 1.0
  * @date 2015-05-10
- * @edit 2015-08-03 Arne Kamola <a.kamola@psilab.de>
+ * @edit 2016-01-27 Arne Kamola <a.kamola@psilab.de>
  */
 
 ?><article id="post-<?php the_ID(); ?>" itemtype="http://schema.org/BlogPosting" itemscope="" <?php post_class(); ?>>
@@ -20,7 +20,7 @@
 		<?php if ( !is_page() ): ?>
 			<aside class="meta">
 
-				<p><time datetime="<?php echo get_the_date('Y-m-d\TH:m'); ?>" itemprop="datePublished"><span class="date"><?php echo get_the_date( get_option('date_format') ); ?></span>, <span class="time"><?php the_time( get_option('time_format') ); ?></span></time> · <?php _e('by', 'blanktheme') ?> <span itemtype="http://schema.org/Person" itemscope="" itemprop="author"><span itemprop="name"><?php the_author(); ?></span></span> · <?php _e('Categories', 'blanktheme'); ?>: <span itemprop="articleSection"><?php the_category(', '); ?></span><?php if ( comments_open() ) : ?> · <?php comments_popup_link( __('<span class="count">0 <span>Comments</span></span>', 'blanktheme'), __('<span class="count">1 <span>Comment</span></span>', 'blanktheme'), __('<span class="count">% <span>Comments</span></span>', 'blanktheme'), $css_class = 'comments'); endif; ?></p>
+				<p><time datetime="<?php echo get_the_date('Y-m-d\TH:m'); ?>" itemprop="datePublished"><span class="date"><?php echo get_the_date( get_option('date_format') ); ?></span>, <span class="time"><?php the_time( get_option('time_format') ); ?></span></time> · <?php _e('by', 'wpblank') ?> <span itemtype="http://schema.org/Person" itemscope="" itemprop="author"><span itemprop="name"><?php the_author(); ?></span></span> · <?php _e('Categories', 'wpblank'); ?>: <span itemprop="articleSection"><?php the_category(', '); ?></span><?php if ( comments_open() ) : ?> · <?php comments_popup_link( __('<span class="count">0 <span>Comments</span></span>', 'wpblank'), __('<span class="count">1 <span>Comment</span></span>', 'wpblank'), __('<span class="count">% <span>Comments</span></span>', 'wpblank'), $css_class = 'comments'); endif; ?></p>
 
 			</aside>
 		<?php endif; ?>
@@ -30,13 +30,13 @@
 	<?php endif; ?>
 
 	<div itemprop="articleBody">
-		<?php the_content( __('Continue', 'blanktheme') ); ?>
+		<?php the_content( __('Continue', 'wpblank') ); ?>
 	</div>
 
 	<?php if ( has_tag() && is_singular() && !is_page() ): ?>
 		<footer class="meta tags">
 
-			<?php the_tags(); ?>
+			<?php the_tags( __('Tags:'), '<span class="sep">, </span>' ); ?>
 
 		</footer>
 	<?php endif; ?>

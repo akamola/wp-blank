@@ -6,7 +6,7 @@
  * @subpackage wp-blank
  * @since wp-blank 1.0
  * @date 2015-05-10
- * @edit 2015-08-03 Arne Kamola <a.kamola@psilab.de>
+ * @edit 2016-01-27 Arne Kamola <a.kamola@psilab.de>
  */
 
 ?><!DOCTYPE html>
@@ -15,7 +15,7 @@
 
 	<meta charset="<?php bloginfo('charset'); ?>">
 
-	<title><?php wp_title($sep = '›', $display = true, $seplocation = 'right'); bloginfo('name'); ?><?php if ( is_home() ) { echo ' &#8226; '; bloginfo('description'); } ?></title>
+	<title><?php wp_title($sep = '›', $display = true, $seplocation = 'right'); bloginfo('name'); ?><?php if ( is_front_page() ) { echo ' &#8226; '; bloginfo('description'); } ?></title>
 
 	<meta name="viewport" content="width=device-width, user-scalable=yes">
 
@@ -42,17 +42,17 @@
 </head>
 <body <?php body_class(); ?>>
 
-	<p id="jumper"><a href="#content">[ <?php _e('Jump to content', 'blanktheme'); ?> ]</a></p>
+	<p id="jumper"><a href="#content">[ <?php _e('Jump to content', 'wpblank'); ?> ]</a></p>
 
 	<header>
 
-		<h1><?php if ( !is_home() || is_paged() ): ?><a href="<?php echo home_url(); ?>"><?php endif; ?><?php bloginfo('name'); ?><?php if ( !is_home() || is_paged() ): ?></a><?php endif; ?></h1>
+		<h1><?php if ( !is_front_page() || is_paged() ): ?><a href="<?php echo home_url(); ?>"><?php endif; ?><?php bloginfo('name'); ?><?php if ( !is_front_page() || is_paged() ): ?></a><?php endif; ?></h1>
 
 		<p class="tagline"><?php bloginfo('description'); ?></p>
 
-		<?php if ( function_exists('dynamic_sidebar') && is_active_sidebar('blanktheme-widgetarea-header') ): ?>
+		<?php if ( has_nav_menu('primary') ): ?>
 
-			<?php dynamic_sidebar('blanktheme-widgetarea-header') ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 
 		<?php endif; ?>
 
