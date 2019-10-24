@@ -13,7 +13,7 @@ Need help? Got questions? Found an error? Have an improvment? Feel free to get i
 - 2 widget areas: sidebar, footer
   - See `functions.php`
   - Widget area token: `wpblank-widgetarea-`
-- 1 menu in the header: primary
+- 1 menu in the header: `primary`
   - See `functions.php`
 - Basic setup for theme support features
   - See `functions.php`
@@ -52,7 +52,7 @@ Need help? Got questions? Found an error? Have an improvment? Feel free to get i
   - See `assets` folder
 - Microsoft Application Tile
   - Set tile color in the `header.php`
-- Pavatar
+- [Pavatar](https://github.com/pavatar/pavatar)
   - See `assets` folder
 - [Schema.org](http://schema.org/) meta data for blog posts
 
@@ -60,8 +60,9 @@ Need help? Got questions? Found an error? Have an improvment? Feel free to get i
 
 - Basic JavaScript file with jQuery setup
   - See `app.js`
-- Enqueue `app.js` to use WordPress` jQuery
+- Enqueue `app.js` to use WordPress' jQuery
   - See `functions.php`
+- Enqueue JavaScript in the footer of the website for better performance
 
 ### Security
 
@@ -69,6 +70,15 @@ Need help? Got questions? Found an error? Have an improvment? Feel free to get i
 - Replace the default login error message to hide any information that could maybe used to crack into the system
 
 ## Releases
+
+### 1.2.0 (2019-10-24)
+
+- Change the container element of `wp_nav_menu` to the HTML 5 element `NAV`, instead of the old `DIV`
+- Change the main content wrapper element from `DIV` to the HTML 5 element `MAIN`
+- Update [normalize.css](https://necolas.github.io/normalize.css/) to version 8.0.1
+- Minify the placeholder images again
+- Update the README.md, try to make some points more understandable
+- Update my e-mail address
 
 ### 1.1.0 (2016-01-27)
 
@@ -100,7 +110,7 @@ Need help? Got questions? Found an error? Have an improvment? Feel free to get i
 
 ## Authors
 
-- Arne Kamola <a.kamola@psilab.de>
+- Arne Kamola <arne@arne.xyz>
 
 ## License
 

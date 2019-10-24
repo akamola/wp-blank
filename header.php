@@ -6,7 +6,7 @@
  * @subpackage wp-blank
  * @since wp-blank 1.0
  * @date 2015-05-10
- * @edit 2016-01-27 Arne Kamola <a.kamola@psilab.de>
+ * @edit 2019-10-24 Arne Kamola <arne@arne.xyz>
  */
 
 ?><!DOCTYPE html>
@@ -52,7 +52,10 @@
 
 		<?php if ( has_nav_menu('primary') ): ?>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			<?php wp_nav_menu( array(
+				'container' => 'nav',
+				'theme_location' => 'primary'
+			)); ?>
 
 		<?php endif; ?>
 

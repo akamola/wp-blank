@@ -6,7 +6,7 @@
  * @subpackage wp-blank
  * @since wp-blank 1.0
  * @date 2015-05-10
- * @edit 2016-01-27 Arne Kamola <a.kamola@psilab.de>
+ * @edit 2019-10-24 Arne Kamola <arne@arne.xyz>
  */
 
 get_header(); ?>
@@ -17,7 +17,7 @@ get_header(); ?>
 
 			<h1><?php _e('Page not found', 'wpblank'); ?></h1>
 
-			<p><!-- Insert your error text here --></p>
+			<p><!-- Insert your error message here --></p>
 
 			<p><code class="error"><?php _e('Error Code 404', 'wpblank'); ?></code></p>
 

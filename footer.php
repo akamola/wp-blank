@@ -6,7 +6,7 @@
  * @subpackage wp-blank
  * @since wp-blank 1.0
  * @date 2015-05-10
- * @edit 2016-01-27 Arne Kamola <a.kamola@psilab.de>
+ * @edit 2019-10-24 Arne Kamola <arne@arne.xyz>
  */
 
 ?>
