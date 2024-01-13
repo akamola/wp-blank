@@ -19,7 +19,7 @@ if ( comments_open() ): ?>
 
 			<?php $comments = wp_list_comments( array('type' => 'comment', 'echo' => false) ); ?>
 
-				<?php if ( count($comments) > 0 ): ?>
+				<?php if ( $comments ): ?>
 
 				<h1><?php _e('Comments', 'wpblank'); ?></h1>
 
@@ -47,7 +47,7 @@ if ( comments_open() ): ?>
 
 			<?php $pings = wp_list_comments( array('type' => 'pings', 'echo' => false) ); ?>
 
-			<?php if ( count($pings) > 0 ): ?>
+			<?php if ( $pings ): ?>
 
 				<h1><?php _e('Trackbacks', 'wpblank'); ?></h1>
 
